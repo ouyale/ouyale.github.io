@@ -303,7 +303,8 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin-top: 28px;
+    margin-top: 36px;
+    clear: both;
 }
 
 .resume-btn i {
@@ -414,6 +415,7 @@ img {
     gap: 40px;
     margin-top: 32px;
     padding-top: 32px;
+    padding-bottom: 8px;
     border-top: 1px solid var(--border);
 }
 
