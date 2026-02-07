@@ -299,6 +299,17 @@ img {
     transform: translateY(-2px);
 }
 
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.resume-btn i {
+    font-size: 0.9rem;
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 40px;
