@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbara Obayi — ML & AI Engineer | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Barbara Obayi</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+            <div class="code-rain" id="codeRain"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Barbara Obayi</h1>
+            <div class="hero-divider"></div>
+            <h2 class="hero-title">ML & AI Engineer | Data Scientist</h2>
+            <p class="hero-subtitle">Machine Learning · Deep Learning · Data Analytics · NLP · Cloud Computing</p>
+            <div class="hero-languages">
+                <span class="lang-tag">English</span>
+                <span class="lang-tag">Chinese Mandarin</span>
+                <span class="lang-tag">Swahili</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <img src="https://avatars.githubusercontent.com/u/120361165" alt="Barbara Obayi" />
+                        <div class="about-image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-lead">I'm a Machine Learning Engineer and Data Scientist with a passion for building AI-driven solutions that create real-world impact.</p>
+                    <p>Currently pursuing my MSc in Machine Learning & Deep Learning, I specialize in tackling complex data problems, optimizing workflows, and developing end-to-end data solutions. From AI-powered crop disease detection helping Kenyan farmers to predictive analytics for e-commerce — I love using data to solve meaningful problems.</p>
+                    <p>When I'm not training models or writing SQL queries, you'll find me exploring the intersection of technology and social impact, working on projects that bridge the gap between cutting-edge AI and practical applications.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">MSc</span>
+                            <span class="stat-label">ML & Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>MATLAB</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>ML & AI</h3>
+                    <div class="skill-tags">
+                        <span>Scikit-learn</span>
+                        <span>MLflow</span>
+                        <span>SciPy</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>BigQuery</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Data Visualization</h3>
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>Tableau</span>
+                        <span>Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span>Google Cloud</span>
+                        <span>AWS</span>
+                        <span>BigQuery</span>
+                        <span>DataProc</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Workflow</h3>
+                    <div class="skill-tags">
+                        <span>GitHub</span>
+                        <span>DagsHub</span>
+                        <span>Google Colab</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of data science and machine learning projects I've worked on. Click on any project to view the code and details.</p>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="data">Data Analytics</button>
+                <button class="filter-btn" data-filter="ai">AI / Deep Learning</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Crop Disease Detection -->
+                <a href="https://github.com/OmdenaAI/KenyaChapter_EarlyDetectionofCropDiseases" target="_blank" class="project-card" data-category="ai">
+                    <div class="project-image" style="background: linear-gradient(135deg, #134e5e, #71b280);">
+                        <div class="project-image-icon"><i class="fas fa-leaf"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Powered Crop Disease Detection</h3>
+                        <p>Led a team developing an AI-driven solution for early detection of crop diseases in Kenyan smallholder farms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2: Sleep Disorders Prediction -->
+                <a href="https://github.com/ouyale/Predicting-Sleep-Disorders-Using-Lifestyle-Data" target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+                        <div class="project-image-icon"><i class="fas fa-bed"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Predicting Sleep Disorders</h3>
+                        <p>Built predictive models using lifestyle and health data to classify sleep disorders with machine learning.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3: Data Visualisation TATA -->
+                <a href="https://github.com/ouyale/Data_Visualisation_TATA" target="_blank" class="project-card" data-category="data">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1a2980, #26d0ce);">
+                        <div class="project-image-icon"><i class="fas fa-chart-pie"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Retail Data Analysis & Dashboard</h3>
+                        <p>Structured and analyzed 540,000+ online transactions to build an interactive Power BI dashboard for TATA retail insights.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4: Sustainable Fashion -->
+                <a href="https://github.com/ouyale/sustainable-fashion-consumer-insights" target="_blank" class="project-card" data-category="data">
+                    <div class="project-image" style="background: linear-gradient(135deg, #c94b4b, #4b134f);">
+                        <div class="project-image-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sustainable Fashion E-commerce</h3>
+                        <p>Leveraged big data analytics to understand Gen Z and Millennial shopping behaviors in sustainable fashion.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Big Data</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 5: Spotify Prediction -->
+                <a href="https://github.com/ouyale/Spotify-Song-Popularity-Prediction" target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1DB954, #191414);">
+                        <div class="project-image-icon"><i class="fas fa-music"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Spotify Song Popularity Prediction</h3>
+                        <p>Predicted song popularity using audio features and metadata with machine learning models.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Jupyter</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 6: Maji Ndogo Water -->
+                <a href="https://github.com/ouyale/Maji-Ndogo-Water-Access-Analysis" target="_blank" class="project-card" data-category="data">
+                    <div class="project-image" style="background: linear-gradient(135deg, #0052D4, #65C7F7, #9CECFB);">
+                        <div class="project-image-icon"><i class="fas fa-water"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Maji Ndogo Water Access Analysis</h3>
+                        <p>Analyzed water access data to uncover patterns and drive improvements in community water infrastructure.</p>
+                        <div class="project-tech">
+                            <span>SQL</span>
+                            <span>Data Analysis</span>
+                            <span>Visualization</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 7: Machine Learning Linear Regression -->
+                <a href="https://github.com/ouyale/Machine-Learning-Linear-Regression" target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ee9ca7, #ffdde1);">
+                        <div class="project-image-icon"><i class="fas fa-chart-line"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Machine Learning: Linear Regression</h3>
+                        <p>End-to-end implementation of linear regression models with feature engineering and evaluation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Statistics</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 8: EDA SQL -->
+                <a href="https://github.com/ouyale/Exploratory-Data-Analysis-SQL" target="_blank" class="project-card" data-category="data">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+                        <div class="project-image-icon"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Exploratory Data Analysis with SQL</h3>
+                        <p>Comprehensive exploratory data analysis using SQL queries to uncover insights and trends in datasets.</p>
+                        <div class="project-tech">
+                            <span>SQL</span>
+                            <span>EDA</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 9: Data Mining -->
+                <a href="https://github.com/ouyale/Data-Mining" target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #654ea3, #eaafc8);">
+                        <div class="project-image-icon"><i class="fas fa-gem"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Mining Techniques</h3>
+                        <p>Applied data mining algorithms and techniques for pattern discovery and knowledge extraction.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Data Mining</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 10: Movie Rating -->
+                <a href="https://github.com/ouyale/Movie-Rating-Prediction" target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #e44d26, #f16529);">
+                        <div class="project-image-icon"><i class="fas fa-film"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Movie Rating Prediction</h3>
+                        <p>Predicted movie ratings using various ML models trained on movie features and user data.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Regression</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 11: Iris Classification -->
+                <a href="https://github.com/ouyale/Iris-flower-Classification" target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #56ab2f, #a8e063);">
+                        <div class="project-image-icon"><i class="fas fa-seedling"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Iris Flower Classification</h3>
+                        <p>Classification of iris flower species using machine learning algorithms — CODSOFT internship project.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Classification</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 12: Sales Prediction -->
+                <a href="https://github.com/ouyale/Sales-Prediction" target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #2c3e50, #3498db);">
+                        <div class="project-image-icon"><i class="fas fa-dollar-sign"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Prediction</h3>
+                        <p>Built predictive models for sales forecasting using historical data and feature engineering.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Forecasting</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">I'm always open to collaborating on data-driven solutions and exciting ML projects. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="https://github.com/ouyale" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/barbara-obayi" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:barbarabracie@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Barbara Obayi. Built with passion for data.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
