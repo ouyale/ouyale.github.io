@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbara Obayi — ML & AI Engineer | Data Scientist</title>
+    <title>Barbara Obayi — ML Engineer & Data Scientist</title>
+    <meta name="description" content="Barbara Obayi - ML Engineer & Data Scientist specializing in responsible AI, fairness-aware machine learning, and NLP. MSc Machine Learning & Deep Learning.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,20 +34,18 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-bg">
-            <canvas id="particleCanvas"></canvas>
-            <div class="code-rain" id="codeRain"></div>
-        </div>
+        <div class="hero-bg"></div>
         <div class="hero-content">
             <p class="hero-greeting">Hello, I'm</p>
             <h1 class="hero-name">Barbara Obayi</h1>
             <div class="hero-divider"></div>
-            <h2 class="hero-title">ML & AI Engineer | Data Scientist</h2>
-            <p class="hero-subtitle">Machine Learning · Deep Learning · Data Analytics · NLP · Cloud Computing</p>
-            <div class="hero-languages">
-                <span class="lang-tag">English</span>
-                <span class="lang-tag">Chinese Mandarin</span>
-                <span class="lang-tag">Swahili</span>
+            <h2 class="hero-title">ML Engineer & Data Scientist</h2>
+            <p class="hero-subtitle">Building fairness-aware ML systems that create real-world impact</p>
+            <div class="hero-focus-areas">
+                <span class="focus-tag"><i class="fas fa-scale-balanced"></i> Responsible AI</span>
+                <span class="focus-tag"><i class="fas fa-brain"></i> Machine Learning</span>
+                <span class="focus-tag"><i class="fas fa-language"></i> NLP</span>
+                <span class="focus-tag"><i class="fas fa-rocket"></i> MLOps</span>
             </div>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -65,18 +64,17 @@
             <div class="about-grid">
                 <div class="about-image">
                     <div class="about-image-wrapper">
-                        <!-- Replace profile.jpg in the assets/ folder with your own photo -->
                         <img src="assets/profile photo.jpg" alt="Barbara Obayi" />
                         <div class="about-image-border"></div>
                     </div>
                 </div>
                 <div class="about-text">
-                    <p class="about-lead">I'm a Machine Learning Engineer and Data Scientist with a passion for building AI-driven solutions that create real-world impact.</p>
-                    <p>Currently pursuing my MSc in Machine Learning & Deep Learning, I specialize in tackling complex data problems, optimizing workflows, and developing end-to-end data solutions. From AI-powered crop disease detection helping Kenyan farmers to predictive analytics for e-commerce — I love using data to solve meaningful problems.</p>
-                    <p>When I'm not training models or writing SQL queries, you'll find me exploring the intersection of technology and social impact, working on projects that bridge the gap between cutting-edge AI and practical applications.</p>
+                    <p class="about-lead">I'm a Machine Learning Engineer and Data Scientist with three years of ML and analytical work on compliance-critical datasets.</p>
+                    <p>Currently completing my MSc in Machine Learning & Deep Learning at the University of Strathclyde, I independently built FinWatch — a production ML system scoring bank customers for financial vulnerability under FCA Consumer Duty. I also led a 52-person cross-functional team to deliver a computer vision system deployed on Android for Kenyan farmers.</p>
+                    <p>My work spans production ML, responsible AI, NLP, and computer vision — from Singapore government data pipelines to fairness-audited credit risk models. I care about building systems that are not only accurate but equitable and auditable.</p>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number">11+</span>
+                            <span class="stat-number">12</span>
                             <span class="stat-label">Projects</span>
                         </div>
                         <div class="stat">
@@ -88,7 +86,11 @@
                             <span class="stat-label">ML & Deep Learning</span>
                         </div>
                     </div>
-                    <!-- Replace resume.pdf in the assets/ folder with your own resume -->
+                    <div class="about-languages">
+                        <span class="lang-tag">English</span>
+                        <span class="lang-tag">Chinese Mandarin</span>
+                        <span class="lang-tag">Swahili</span>
+                    </div>
                     <a href="assets/Obayi_Barbara_Resume.pdf" download class="btn btn-primary resume-btn">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
@@ -108,26 +110,61 @@
                     <div class="skill-tags">
                         <span>Python</span>
                         <span>SQL</span>
+                        <span>R</span>
                         <span>MATLAB</span>
                     </div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                    <h3>ML & AI</h3>
+                    <h3>ML & Deep Learning</h3>
                     <div class="skill-tags">
                         <span>Scikit-learn</span>
+                        <span>XGBoost</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>PyTorch</span>
+                        <span>YOLO</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-language"></i></div>
+                    <h3>NLP & LLMs</h3>
+                    <div class="skill-tags">
+                        <span>LangChain</span>
+                        <span>RAG</span>
+                        <span>BERT</span>
+                        <span>spaCy</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>MLOps & Deployment</h3>
+                    <div class="skill-tags">
                         <span>MLflow</span>
-                        <span>SciPy</span>
-                        <span>Deep Learning</span>
+                        <span>FastAPI</span>
+                        <span>Docker</span>
+                        <span>Streamlit</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-scale-balanced"></i></div>
+                    <h3>Responsible AI & Eval</h3>
+                    <div class="skill-tags">
+                        <span>SHAP</span>
+                        <span>Fairness Auditing</span>
+                        <span>A/B Testing</span>
+                        <span>Benchmark Design</span>
                     </div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>Databases</h3>
+                    <h3>Databases & Data Eng</h3>
                     <div class="skill-tags">
                         <span>MySQL</span>
                         <span>PostgreSQL</span>
                         <span>BigQuery</span>
+                        <span>Apache Spark</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -137,26 +174,18 @@
                         <span>Power BI</span>
                         <span>Tableau</span>
                         <span>Matplotlib</span>
+                        <span>Seaborn</span>
                     </div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud Platforms</h3>
+                    <h3>Cloud & Tools</h3>
                     <div class="skill-tags">
-                        <span>Google Cloud</span>
                         <span>AWS</span>
-                        <span>BigQuery</span>
-                        <span>DataProc</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
-                    <h3>Tools & Workflow</h3>
-                    <div class="skill-tags">
+                        <span>Google Cloud</span>
                         <span>GitHub</span>
-                        <span>DagsHub</span>
-                        <span>Google Colab</span>
                         <span>Jupyter</span>
+                        <span>Optuna</span>
                     </div>
                 </div>
             </div>
@@ -167,34 +196,134 @@
     <section class="section projects" id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">A selection of data science and machine learning projects I've worked on. Click on any project to view the code and details.</p>
+            <p class="section-subtitle">A selection of data science and machine learning projects. Click on any project to view the code and details.</p>
 
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
                 <button class="filter-btn" data-filter="data">Data Analytics</button>
                 <button class="filter-btn" data-filter="ai">AI / Deep Learning</button>
             </div>
 
             <div class="projects-grid">
 
-                <!-- Project 1: Crop Disease Detection -->
+                <!-- FinWatch (Flagship) -->
+                <a href="https://github.com/ouyale/Finwatch" target="_blank" class="project-card flagship" data-category="ml">
+                    <div class="project-badge">
+                        <span class="badge-featured"><i class="fas fa-star"></i> Featured Project</span>
+                    </div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #0f2027, #1a3a4a, #2c5364);">
+                        <div class="project-image-icon"><i class="fas fa-shield-alt"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FinWatch — Financial Vulnerability Detection</h3>
+                        <p>Production ML system for identifying financially vulnerable individuals. Fairness-aware pipeline with XGBoost, SHAP explainability, and full MLOps deployment via FastAPI, Streamlit, MLflow, and Docker.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">0.1877</span>
+                                <span class="metric-label">PR-AUC</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2.3x</span>
+                                <span class="metric-label">Lift</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">0.63</span>
+                                <span class="metric-label">Recall</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value"><i class="fas fa-check-circle"></i></span>
+                                <span class="metric-label">Fairness Audit</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>XGBoost</span>
+                            <span>SHAP</span>
+                            <span>FastAPI</span>
+                            <span>Streamlit</span>
+                            <span>MLflow</span>
+                            <span>Docker</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- RAG Policy QA System (MSc Dissertation) -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-badge">
+                        <span class="badge-thesis"><i class="fas fa-graduation-cap"></i> MSc Dissertation</span>
+                    </div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #1a1a3e, #2d1b69, #4a1942);">
+                        <div class="project-image-icon"><i class="fas fa-robot"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Auditable RAG System for Policy Documents</h3>
+                        <p>Question-answering AI system using LLaMA-3 8B and RAG over 100 versioned university policy documents. Features a trust calibration router and custom evaluation framework extending RAGAS with citation fidelity and abstention metrics.</p>
+                        <div class="project-tech">
+                            <span>LLaMA-3</span>
+                            <span>LangChain</span>
+                            <span>ChromaDB</span>
+                            <span>RAG</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gender Bias Detection -->
+                <div class="project-card" data-category="nlp">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4a1942, #6b2fa0, #2d1b69);">
+                        <div class="project-image-icon"><i class="fas fa-venus-mars"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Gender Bias Detection in AI Recruitment</h3>
+                        <p>NLP system analyzing 4,186 Kenyan job postings for hidden gender bias using BERT and spaCy. Developed a 7-dimensional bias taxonomy for systematic bias identification in recruitment language.</p>
+                        <div class="project-tech">
+                            <span>BERT</span>
+                            <span>spaCy</span>
+                            <span>NLP</span>
+                            <span>Python</span>
+                            <span>Bias Detection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SME Credit Assessment -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);">
+                        <div class="project-image-icon"><i class="fas fa-building-columns"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SME Credit Assessment Pipeline</h3>
+                        <p>Three-way loan decision system (APPROVE / DECLINE / REFER) for Ghanaian SME applications. Built with XGBoost and LightGBM, tuned with Optuna, and includes a fairness audit module.</p>
+                        <div class="project-tech">
+                            <span>XGBoost</span>
+                            <span>LightGBM</span>
+                            <span>Optuna</span>
+                            <span>Fairness</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crop Disease Detection -->
                 <a href="https://github.com/ouyale/Early-Detection-Crop-Diseases-Kenya" target="_blank" class="project-card" data-category="ai">
                     <div class="project-image" style="background: linear-gradient(135deg, #134e5e, #71b280);">
                         <div class="project-image-icon"><i class="fas fa-leaf"></i></div>
                     </div>
                     <div class="project-info">
                         <h3>AI-Powered Crop Disease Detection</h3>
-                        <p>Led a team developing an AI-driven solution for early detection of crop diseases in Kenyan smallholder farms.</p>
+                        <p>Led a 52-person team to deliver a production CV system for Kenyan farmers. YOLO on 17,939 images across 4 crops and 20+ disease classes, deployed on Android via TensorFlow Lite. 90-92% accuracy.</p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>Deep Learning</span>
+                            <span>YOLO</span>
+                            <span>TensorFlow Lite</span>
                             <span>Computer Vision</span>
+                            <span>Android</span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Project 2: Sleep Disorders Prediction -->
+                <!-- Sleep Disorders Prediction -->
                 <a href="https://github.com/ouyale/Predicting-Sleep-Disorders-Using-Lifestyle-Data" target="_blank" class="project-card" data-category="ml">
                     <div class="project-image" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
                         <div class="project-image-icon"><i class="fas fa-bed"></i></div>
@@ -210,7 +339,7 @@
                     </div>
                 </a>
 
-                <!-- Project 3: Data Visualisation TATA -->
+                <!-- TATA Retail Dashboard -->
                 <a href="https://github.com/ouyale/Data_Visualisation_TATA" target="_blank" class="project-card" data-category="data">
                     <div class="project-image" style="background: linear-gradient(135deg, #1a2980, #26d0ce);">
                         <div class="project-image-icon"><i class="fas fa-chart-pie"></i></div>
@@ -226,7 +355,7 @@
                     </div>
                 </a>
 
-                <!-- Project 4: Sustainable Fashion -->
+                <!-- Sustainable Fashion -->
                 <a href="https://github.com/ouyale/sustainable-fashion-consumer-insights" target="_blank" class="project-card" data-category="data">
                     <div class="project-image" style="background: linear-gradient(135deg, #c94b4b, #4b134f);">
                         <div class="project-image-icon"><i class="fas fa-tshirt"></i></div>
@@ -242,7 +371,7 @@
                     </div>
                 </a>
 
-                <!-- Project 5: Spotify Prediction -->
+                <!-- Spotify Prediction -->
                 <a href="https://github.com/ouyale/Spotify-Song-Popularity-Prediction" target="_blank" class="project-card" data-category="ml">
                     <div class="project-image" style="background: linear-gradient(135deg, #1DB954, #191414);">
                         <div class="project-image-icon"><i class="fas fa-music"></i></div>
@@ -258,7 +387,7 @@
                     </div>
                 </a>
 
-                <!-- Project 6: Maji Ndogo Water -->
+                <!-- Maji Ndogo Water -->
                 <a href="https://github.com/ouyale/Maji-Ndogo-Water-Access-Analysis" target="_blank" class="project-card" data-category="data">
                     <div class="project-image" style="background: linear-gradient(135deg, #0052D4, #65C7F7, #9CECFB);">
                         <div class="project-image-icon"><i class="fas fa-water"></i></div>
@@ -274,23 +403,23 @@
                     </div>
                 </a>
 
-                <!-- Project 7: Machine Learning Linear Regression -->
-                <a href="https://github.com/ouyale/Machine-Learning-Linear-Regression" target="_blank" class="project-card" data-category="ml">
-                    <div class="project-image" style="background: linear-gradient(135deg, #ee9ca7, #ffdde1);">
-                        <div class="project-image-icon"><i class="fas fa-chart-line"></i></div>
+                <!-- Kenya Job Boards Web Scraper (renamed from Data Mining) -->
+                <a href="https://github.com/ouyale/Data-Mining" target="_blank" class="project-card" data-category="data">
+                    <div class="project-image" style="background: linear-gradient(135deg, #654ea3, #eaafc8);">
+                        <div class="project-image-icon"><i class="fas fa-spider"></i></div>
                     </div>
                     <div class="project-info">
-                        <h3>Machine Learning: Linear Regression</h3>
-                        <p>End-to-end implementation of linear regression models with feature engineering and evaluation.</p>
+                        <h3>Kenya Job Boards Web Scraper</h3>
+                        <p>Built a web scraper collecting 5,000+ job postings from 3 Kenyan job boards for labor market analysis with intelligent salary parsing.</p>
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>Statistics</span>
+                            <span>Web Scraping</span>
+                            <span>Pandas</span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Project 8: EDA SQL -->
+                <!-- EDA SQL -->
                 <a href="https://github.com/ouyale/Exploratory-Data-Analysis-SQL" target="_blank" class="project-card" data-category="data">
                     <div class="project-image" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
                         <div class="project-image-icon"><i class="fas fa-search"></i></div>
@@ -302,54 +431,6 @@
                             <span>SQL</span>
                             <span>EDA</span>
                             <span>Data Analysis</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 9: Data Mining -->
-                <a href="https://github.com/ouyale/Data-Mining" target="_blank" class="project-card" data-category="ml">
-                    <div class="project-image" style="background: linear-gradient(135deg, #654ea3, #eaafc8);">
-                        <div class="project-image-icon"><i class="fas fa-gem"></i></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Data Mining Techniques</h3>
-                        <p>Applied data mining algorithms and techniques for pattern discovery and knowledge extraction.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Data Mining</span>
-                            <span>ML</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 10: Movie Rating -->
-                <a href="https://github.com/ouyale/Movie-Rating-Prediction" target="_blank" class="project-card" data-category="ml">
-                    <div class="project-image" style="background: linear-gradient(135deg, #e44d26, #f16529);">
-                        <div class="project-image-icon"><i class="fas fa-film"></i></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Movie Rating Prediction</h3>
-                        <p>Predicted movie ratings using various ML models trained on movie features and user data.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>ML</span>
-                            <span>Regression</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 11: Sales Prediction -->
-                <a href="https://github.com/ouyale/Sales-Prediction" target="_blank" class="project-card" data-category="ml">
-                    <div class="project-image" style="background: linear-gradient(135deg, #2c3e50, #3498db);">
-                        <div class="project-image-icon"><i class="fas fa-dollar-sign"></i></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Sales Prediction</h3>
-                        <p>Built predictive models for sales forecasting using historical data and feature engineering.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Forecasting</span>
-                            <span>ML</span>
                         </div>
                     </div>
                 </a>

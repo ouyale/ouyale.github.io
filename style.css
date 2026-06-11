@@ -1,21 +1,25 @@
 /* ===== CSS Variables ===== */
 :root {
-    --bg-dark: #0a0a0f;
-    --bg-section: #0f0f17;
-    --bg-card: #161625;
-    --bg-card-hover: #1e1e32;
+    --bg-dark: #08080e;
+    --bg-section: #0c0c16;
+    --bg-card: #12121f;
+    --bg-card-hover: #1a1a2e;
     --text-primary: #ffffff;
-    --text-secondary: #a0a0b8;
+    --text-secondary: #9898b0;
     --text-muted: #6b6b80;
     --accent: #4fc3f7;
     --accent-alt: #7c4dff;
     --accent-gradient: linear-gradient(135deg, #4fc3f7, #7c4dff);
+    --accent-warm: #f59e0b;
+    --accent-green: #34d399;
+    --surface-elevated: #1a1a30;
     --border: #2a2a3d;
+    --border-glow: rgba(79, 195, 247, 0.25);
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 8px 40px rgba(79, 195, 247, 0.15);
+    --shadow-hover: 0 8px 40px rgba(79, 195, 247, 0.12);
 }
 
 /* ===== Reset & Base ===== */
@@ -66,8 +70,9 @@ img {
 }
 
 .navbar.scrolled {
-    background: rgba(10, 10, 15, 0.95);
+    background: rgba(8, 8, 14, 0.95);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 12px 0;
     border-bottom: 1px solid var(--border);
 }
@@ -141,44 +146,25 @@ img {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #0a0a1a 0%, #0f1628 30%, #0a1020 60%, #0a0a1a 100%);
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(79, 195, 247, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(124, 77, 255, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(79, 195, 247, 0.04) 0%, transparent 50%),
+        linear-gradient(135deg, #08080e 0%, #0f1628 30%, #0a1020 60%, #08080e 100%);
+    background-size: 200% 200%, 200% 200%, 200% 200%, 100% 100%;
+    animation: meshShift 20s ease-in-out infinite alternate;
+}
+
+@keyframes meshShift {
+    0% { background-position: 0% 0%, 100% 0%, 50% 100%, 0% 0%; }
+    100% { background-position: 100% 100%, 0% 100%, 50% 0%, 0% 0%; }
 }
 
 .hero-bg::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 50% 50%, rgba(79, 195, 247, 0.08) 0%, transparent 70%);
-}
-
-#particleCanvas {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.code-rain {
-    position: absolute;
-    inset: 0;
-    opacity: 0.06;
-    font-family: var(--font-mono);
-    font-size: 14px;
-    color: var(--accent);
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.code-rain .line {
-    position: absolute;
-    white-space: nowrap;
-    animation: slideCode linear infinite;
-    opacity: 0.5;
-}
-
-@keyframes slideCode {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100vw); }
+    background: radial-gradient(ellipse at 50% 50%, rgba(79, 195, 247, 0.06) 0%, transparent 70%);
 }
 
 .hero-content {
@@ -201,7 +187,7 @@ img {
 
 .hero-name {
     font-size: clamp(2.8rem, 7vw, 5.5rem);
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: -2px;
     line-height: 1.1;
     opacity: 0;
@@ -231,13 +217,13 @@ img {
     font-size: 0.95rem;
     color: var(--text-muted);
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin-bottom: 24px;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards 0.7s;
 }
 
-.hero-languages {
+.hero-focus-areas {
     display: flex;
     gap: 12px;
     justify-content: center;
@@ -247,14 +233,21 @@ img {
     animation: fadeInUp 0.8s ease forwards 0.8s;
 }
 
-.lang-tag {
-    padding: 6px 16px;
-    font-size: 0.8rem;
+.focus-tag {
+    padding: 8px 18px;
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--accent);
-    border: 1px solid rgba(79, 195, 247, 0.3);
-    border-radius: 20px;
-    background: rgba(79, 195, 247, 0.05);
+    border: 1px solid rgba(79, 195, 247, 0.25);
+    border-radius: 24px;
+    background: rgba(79, 195, 247, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.focus-tag i {
+    font-size: 0.8rem;
 }
 
 .hero-cta {
@@ -349,11 +342,11 @@ img {
 }
 
 .section-title {
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 700;
     text-align: center;
     margin-bottom: 16px;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .section-subtitle {
@@ -439,11 +432,28 @@ img {
     margin-top: 4px;
 }
 
+.about-languages {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.about-languages .lang-tag {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent);
+    border: 1px solid rgba(79, 195, 247, 0.3);
+    border-radius: 20px;
+    background: rgba(79, 195, 247, 0.05);
+}
+
 /* ===== Skills Section ===== */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     margin-top: 48px;
 }
 
@@ -451,7 +461,7 @@ img {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 32px;
+    padding: 32px 24px;
     text-align: center;
     transition: var(--transition);
 }
@@ -477,7 +487,7 @@ img {
 }
 
 .skill-card h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 16px;
 }
@@ -490,8 +500,8 @@ img {
 }
 
 .skill-tags span {
-    padding: 5px 14px;
-    font-size: 0.8rem;
+    padding: 5px 12px;
+    font-size: 0.78rem;
     border-radius: 20px;
     background: rgba(79, 195, 247, 0.08);
     color: var(--text-secondary);
@@ -529,7 +539,7 @@ img {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -540,12 +550,72 @@ img {
     overflow: hidden;
     transition: var(--transition);
     display: block;
+    position: relative;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(79, 195, 247, 0.3);
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px) scale(1.01);
+    border-color: rgba(79, 195, 247, 0.25);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(79, 195, 247, 0.08);
+}
+
+.project-card:not(a) {
+    cursor: default;
+}
+
+.project-card:not(a):hover {
+    transform: translateY(-3px);
+}
+
+/* Flagship card */
+.project-card.flagship {
+    grid-column: 1 / 3;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border-glow);
+}
+
+.project-card.flagship .project-image {
+    height: 220px;
+}
+
+.project-card.flagship .project-info h3 {
+    font-size: 1.3rem;
+}
+
+/* Project badges */
+.project-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 3;
+}
+
+.badge-featured {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0a0a0f;
+    background: var(--accent-warm);
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-thesis {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--accent-alt);
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .project-image {
@@ -581,7 +651,7 @@ img {
 }
 
 .project-info h3 {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 600;
     margin-bottom: 8px;
     line-height: 1.4;
@@ -592,6 +662,38 @@ img {
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 16px;
+}
+
+/* Project metrics (FinWatch) */
+.project-metrics {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.metric {
+    text-align: center;
+    flex: 1;
+}
+
+.metric-value {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--accent-green);
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .project-tech {
@@ -677,6 +779,14 @@ img {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card.flagship {
+        grid-column: 1 / 3;
+    }
 }
 
 @media (max-width: 768px) {
@@ -690,8 +800,9 @@ img {
         right: -100%;
         width: 280px;
         height: 100vh;
-        background: rgba(10, 10, 15, 0.98);
+        background: rgba(8, 8, 14, 0.98);
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
         padding: 80px 32px 32px;
         gap: 4px;
@@ -718,12 +829,24 @@ img {
         justify-content: center;
     }
 
+    .about-languages {
+        justify-content: center;
+    }
+
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card.flagship {
+        grid-column: 1;
+    }
+
+    .project-card.flagship .project-image {
+        height: 180px;
     }
 
     .hero-name {
@@ -739,6 +862,14 @@ img {
         width: 100%;
         max-width: 300px;
     }
+
+    .project-metrics {
+        gap: 12px;
+    }
+
+    .metric-value {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -753,5 +884,18 @@ img {
     .about-image-wrapper {
         width: 200px;
         height: 200px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-focus-areas {
+        gap: 8px;
+    }
+
+    .focus-tag {
+        padding: 6px 14px;
+        font-size: 0.8rem;
     }
 }
